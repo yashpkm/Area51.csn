@@ -139,8 +139,6 @@ const Home = () => {
           <a
             className="nav-whatsapp"
             href={WHATSAPP_LINK}
-            target="_blank"
-            rel="noreferrer"
             data-testid="nav-whatsapp-link"
           >
             <MessageCircle size={16} /> Chat
@@ -183,8 +181,6 @@ const Home = () => {
             >
               <a
                 href={WHATSAPP_LINK}
-                target="_blank"
-                rel="noreferrer"
                 data-testid="hero-whatsapp-cta-link"
               >
                 <MessageCircle size={18} /> Message on WhatsApp
@@ -393,21 +389,19 @@ const Home = () => {
 
               <div className="contact-line" data-testid="contact-instagram-row">
                 <Instagram size={18} />
-                <a
-                  href={INSTAGRAM_LINK}
-                  target="_blank"
-                  rel="noreferrer"
-                  data-testid="contact-instagram-link"
-                >
-                  @area51_csn
-                </a>
+                <p data-testid="contact-instagram-text">@area51_csn</p>
               </div>
 
               <div className="contact-actions" data-testid="contact-actions-group">
                 <a
+                  href={INSTAGRAM_LINK}
+                  className="contact-action"
+                  data-testid="contact-instagram-link"
+                >
+                  Instagram @area51_csn <ArrowUpRight size={15} />
+                </a>
+                <a
                   href={MAP_LINK}
-                  target="_blank"
-                  rel="noreferrer"
                   className="contact-action"
                   data-testid="contact-map-link"
                 >
@@ -415,8 +409,6 @@ const Home = () => {
                 </a>
                 <a
                   href={WHATSAPP_LINK}
-                  target="_blank"
-                  rel="noreferrer"
                   className="contact-action"
                   data-testid="contact-whatsapp-link"
                 >
@@ -430,8 +422,6 @@ const Home = () => {
 
       <a
         href={WHATSAPP_LINK}
-        target="_blank"
-        rel="noreferrer"
         className="floating-whatsapp"
         data-testid="floating-whatsapp-button"
       >

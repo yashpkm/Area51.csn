@@ -42,6 +42,7 @@ Use the attached images to design a landing page for **Area 51**.
 - Fine-tuned hero background darker again for improved text readability while keeping the sign visible.
 - Enlarged hero logo and generated a transparent-style logo asset (`/frontend/public/logo-transparent.png`) so black edges merge with the dark background.
 - Removed the last bottom image from the page and rebalanced the contact section to a clean single-column layout.
+- Improved contact link usability: Instagram, location, and WhatsApp actions now open reliably in the same tab with prominent button-style actions.
 
 ## Testing Status
 - Self-tested with screenshot flow on public URL
