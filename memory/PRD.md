@@ -39,6 +39,7 @@ Use the attached images to design a landing page for **Area 51**.
 - Reduced repetitive cafe/outdoor seating visuals in gallery and kept only 2 strongest cafe-style shots.
 - Shifted pickleball amenity image framing downward for better composition in the amenities section.
 - Increased background visibility in both sections by reducing dark overlays and improving image brightness/contrast framing.
+- Fine-tuned hero background darker again for improved text readability while keeping the sign visible.
 
 ## Testing Status
 - Self-tested with screenshot flow on public URL
