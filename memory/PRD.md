@@ -40,6 +40,7 @@ Use the attached images to design a landing page for **Area 51**.
 - Shifted pickleball amenity image framing downward for better composition in the amenities section.
 - Increased background visibility in both sections by reducing dark overlays and improving image brightness/contrast framing.
 - Fine-tuned hero background darker again for improved text readability while keeping the sign visible.
+- Enlarged hero logo and generated a transparent-style logo asset (`/frontend/public/logo-transparent.png`) so black edges merge with the dark background.
 
 ## Testing Status
 - Self-tested with screenshot flow on public URL

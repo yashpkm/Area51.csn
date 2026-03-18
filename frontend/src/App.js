@@ -11,8 +11,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const LOGO_URL =
-  "https://customer-assets.emergentagent.com/job_classified-pages/artifacts/7l4msbzc_b4e0e9f8-77fa-432e-82e0-9755f9940cb9.jpg";
+const LOGO_URL = "/logo-transparent.png";
 
 const VENUE_IMAGES = {
   hero:

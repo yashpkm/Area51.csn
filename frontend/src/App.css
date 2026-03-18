@@ -146,10 +146,13 @@
 }
 
 .hero-logo {
-    width: clamp(92px, 10vw, 130px);
-    border: 1px solid var(--a51-border);
-    border-radius: 4px;
-    box-shadow: 0 0 26px rgba(255, 193, 7, 0.18);
+    width: clamp(138px, 15vw, 210px);
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
+    opacity: 1;
+    filter: contrast(1.08) brightness(1.04);
 }
 
 .class-label {
