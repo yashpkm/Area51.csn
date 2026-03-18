@@ -33,6 +33,12 @@ Use the attached images to design a landing page for **Area 51**.
 - Floating WhatsApp CTA for quick conversion
 - Responsive behavior validated on desktop/mobile; no horizontal overflow found
 
+## Iteration Update (Background + Gallery Refinement)
+- Updated Hero background to your newly shared dark Area 51 sign image.
+- Added your newly shared night-lamps image as the **About section background**.
+- Reduced repetitive cafe/outdoor seating visuals in gallery and kept only 2 strongest cafe-style shots.
+- Shifted pickleball amenity image framing downward for better composition in the amenities section.
+
 ## Testing Status
 - Self-tested with screenshot flow on public URL
 - Testing agent run complete: `/app/test_reports/iteration_1.json`

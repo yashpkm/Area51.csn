@@ -16,7 +16,9 @@ const LOGO_URL =
 
 const VENUE_IMAGES = {
   hero:
-    "https://customer-assets.emergentagent.com/job_8802cd2a-902b-46e1-9bc3-788961602526/artifacts/glhm9mz0_WhatsApp%20Image%202026-03-12%20at%2019.53.jpeg",
+    "https://customer-assets.emergentagent.com/job_classified-pages/artifacts/zedooz8h_WhatsApp%20Image%202026-03-12%20at%2019.53.jpeg",
+  aboutBackdrop:
+    "https://customer-assets.emergentagent.com/job_classified-pages/artifacts/e3xojvpt_WhatsApp%20Image%202026-03-12%20at%2019.29.5j.jpeg",
   outdoorCourt:
     "https://customer-assets.emergentagent.com/job_8802cd2a-902b-46e1-9bc3-788961602526/artifacts/fpyfawqe_WhatsApp%20Image%202026-03-17%20at%2017.20.33%20%281%29.jpeg",
   indoorCourt:
@@ -49,10 +51,6 @@ const GALLERY_IMAGES = [
     caption: "Snooker space by night",
   },
   {
-    src: "https://customer-assets.emergentagent.com/job_classified-pages/artifacts/a4fcvfvw_WhatsApp%20Image%202026-03-12%20at%2019.30.jpeg",
-    caption: "Courtyard chill seating",
-  },
-  {
     src: "https://customer-assets.emergentagent.com/job_classified-pages/artifacts/8t05kz73_WhatsApp%20Image%202026-03-12%20at%2019.30.32.jpeg",
     caption: "Game ➜ Set ➜ Sip mood",
   },
@@ -67,7 +65,8 @@ const AMENITIES = [
     title: "Pickleball Indoor & Outdoor",
     description:
       "Fast games in an indoor arena plus open-air night sessions under lit courts.",
-    image: VENUE_IMAGES.indoorCourt,
+    image: VENUE_IMAGES.outdoorCourt,
+    imagePosition: "center 78%",
   },
   {
     title: "All-Day & Late-Night Cafe",
@@ -223,13 +222,21 @@ const Home = () => {
       <main data-testid="main-content">
         <motion.section
           id="about"
-          className="section"
+          className="section about-section-themed"
           variants={reveal}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.3 }}
           data-testid="about-section"
         >
+          <img
+            src={VENUE_IMAGES.aboutBackdrop}
+            alt="Area 51 ambience lights"
+            className="about-background-image"
+            data-testid="about-background-image"
+          />
+          <div className="about-background-overlay" data-testid="about-background-overlay" />
+
           <div className="content-wrap about-grid">
             <div className="about-copy">
               <p className="section-kicker" data-testid="about-kicker">
@@ -243,14 +250,6 @@ const Home = () => {
               <p className="about-note" data-testid="about-fomo-note">
                 Everyone will ask where this place was when they see your stories.
               </p>
-            </div>
-
-            <div className="about-image-frame" data-testid="about-image-frame">
-              <img
-                src={VENUE_IMAGES.outdoorCourt}
-                alt="Outdoor pickleball area"
-                data-testid="about-highlight-image"
-              />
             </div>
           </div>
         </motion.section>
@@ -281,6 +280,11 @@ const Home = () => {
                   <img
                     src={amenity.image}
                     alt={amenity.title}
+                    style={
+                      amenity.imagePosition
+                        ? { objectPosition: amenity.imagePosition }
+                        : undefined
+                    }
                     data-testid={`amenity-image-${index + 1}`}
                   />
                   <div className="amenity-content">
