@@ -38,6 +38,7 @@ Use the attached images to design a landing page for **Area 51**.
 - Added your newly shared night-lamps image as the **About section background**.
 - Reduced repetitive cafe/outdoor seating visuals in gallery and kept only 2 strongest cafe-style shots.
 - Shifted pickleball amenity image framing downward for better composition in the amenities section.
+- Increased background visibility in both sections by reducing dark overlays and improving image brightness/contrast framing.
 
 ## Testing Status
 - Self-tested with screenshot flow on public URL
