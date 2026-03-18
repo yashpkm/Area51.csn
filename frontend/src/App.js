@@ -424,14 +424,6 @@ const Home = () => {
                 </a>
               </div>
             </div>
-
-            <div className="contact-photo" data-testid="contact-photo-card">
-              <img
-                src={VENUE_IMAGES.cafe}
-                alt="Area 51 outdoor cafe lights"
-                data-testid="contact-photo-image"
-              />
-            </div>
           </div>
         </motion.section>
       </main>

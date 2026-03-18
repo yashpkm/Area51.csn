@@ -297,9 +297,10 @@ h2 {
 
 .contact-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 1.1rem;
     align-items: stretch;
+    max-width: 760px;
 }
 
 .about-section-themed {
