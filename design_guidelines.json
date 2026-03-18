@@ -1,0 +1,112 @@
+{
+  "design_strategy": {
+    "identity": {
+      "name": "Area 51",
+      "brand_archetype": "The Outlaw / The Explorer",
+      "emotional_tone": "Mysterious, Exclusive, High-Energy, Underground, FOMO-inducing",
+      "visual_style": "Industrial Cyber-Bunker",
+      "core_message": "Classified Location. Restricted Access. If you know, you know."
+    },
+    "theme": {
+      "mode": "dark",
+      "primary_color": "Amber/Yellow",
+      "background_style": "Deep Obsidian with Noise/Grain textures",
+      "scrolling": "Lenis Smooth Scroll (Mandatory)"
+    }
+  },
+  "typography": {
+    "primary_font": {
+      "name": "Chakra Petch",
+      "usage": "Headings, Hero Text, massive numbers",
+      "weights": ["600", "700"],
+      "import_url": "https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&display=swap"
+    },
+    "secondary_font": {
+      "name": "Barlow",
+      "usage": "Body text, UI elements, descriptions",
+      "weights": ["400", "500", "600"],
+      "import_url": "https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap"
+    },
+    "accent_font": {
+      "name": "Share Tech Mono",
+      "usage": "Captions, 'Classified' stamps, coordinates, data-testid labels",
+      "import_url": "https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+    }
+  },
+  "colors": {
+    "palette": {
+      "background": "#050505",
+      "surface": "#121212",
+      "surface_highlight": "#1E1E1E",
+      "primary": "#FFC107",
+      "primary_hover": "#FFD54F",
+      "text_primary": "#F3F4F6",
+      "text_secondary": "#9CA3AF",
+      "accent_danger": "#EF4444",
+      "border_subtle": "rgba(255, 193, 7, 0.15)",
+      "glow": "0 0 20px rgba(255, 193, 7, 0.3)"
+    },
+    "gradients": {
+      "hero_overlay": "linear-gradient(to bottom, rgba(5,5,5,0) 0%, #050505 100%)",
+      "amber_beam": "linear-gradient(90deg, transparent, rgba(255, 193, 7, 0.5), transparent)"
+    }
+  },
+  "layout_grid": {
+    "type": "Bento Grid",
+    "container_padding": "p-4 md:p-8 lg:p-12",
+    "gap": "gap-6 md:gap-8",
+    "border_radius": "rounded-none",
+    "border_style": "1px solid rgba(255, 193, 7, 0.2)"
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#FFC107] text-black font-bold uppercase tracking-widest hover:bg-[#FFD54F] transition-all sharp-edges clip-path-polygon",
+      "secondary": "border border-[#FFC107] text-[#FFC107] bg-transparent hover:bg-[#FFC107]/10 uppercase tracking-widest"
+    },
+    "cards": {
+      "style": "bg-[#121212] border border-white/10 hover:border-[#FFC107]/50 transition-colors duration-300 relative overflow-hidden group",
+      "overlay": "absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-80"
+    },
+    "navigation": {
+      "style": "fixed top-0 w-full z-50 bg-[#050505]/80 backdrop-blur-md border-b border-white/5",
+      "links": "font-mono text-sm uppercase tracking-widest hover:text-[#FFC107]"
+    },
+    "testimonials": {
+      "style": "Terminal/Dossier style. Monospaced text, rigid borders, 'CONFIDENTIAL' stamps."
+    }
+  },
+  "image_urls": {
+    "hero_bg": "https://images.unsplash.com/photo-1627839244058-9907437dca99?auto=format&fit=crop&q=80",
+    "pickleball": "https://images.unsplash.com/photo-1771909720886-a90afd1b37f5?auto=format&fit=crop&q=80",
+    "snooker": "https://images.unsplash.com/photo-1763830915739-b560abcd5fd4?auto=format&fit=crop&q=80",
+    "cafe_vibe": "https://images.unsplash.com/photo-1550218585-5a4e6bc59ebb?auto=format&fit=crop&q=80",
+    "cafe_seating": "https://images.unsplash.com/photo-1740138005736-2fe26ac42990?auto=format&fit=crop&q=80",
+    "map_placeholder": "https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80"
+  },
+  "motion": {
+    "library": "framer-motion",
+    "effects": {
+      "hover": "scale(1.02) contrast(1.1)",
+      "entrance": "staggerChildren: 0.1, delayChildren: 0.2",
+      "text_reveal": "Typewriter effect for hero text"
+    }
+  },
+  "accessibility": {
+    "contrast_check": "Ensure Amber text is on Black, or Black text on Amber. Avoid Amber on White.",
+    "reduced_motion": "Disable glitch effects if prefers-reduced-motion is true"
+  },
+  "instructions_to_main_agent": [
+    "Install 'framer-motion', 'lucide-react', 'clsx', 'tailwind-merge' if missing.",
+    "Add the Google Fonts imports to index.css immediately.",
+    "Create a 'Noise' utility component for that grainy texture overlay on the background.",
+    "The 'WhatsApp' CTA must be sticky on mobile bottom right OR a fixed bar at bottom.",
+    "Use 'react-fast-marquee' for a 'RESTRICTED AREA // AUTHORIZED PERSONNEL ONLY' scrolling banner.",
+    "Ensure every interactive element has a data-testid attribute (e.g., 'hero-cta-button', 'amenity-card-pickleball')."
+  ],
+  "universal_guidelines": [
+    "Do not use gradients for main backgrounds, use solid dark colors + noise/texture.",
+    "Avoid rounded corners > 4px. Keep it sharp and industrial.",
+    "Use uppercase text with wide tracking (tracking-widest) for all labels and subheadings.",
+    "Never use 'Lorem Ipsum'. Use 'REDACTED', 'CLASSIFIED', or actual copy related to the venue."
+  ]
+}
